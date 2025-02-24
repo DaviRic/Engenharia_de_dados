@@ -1,6 +1,6 @@
-import pandas as pd
+import pandas as pd # type: ignore
 import codecs
-from chardet.universaldetector import UniversalDetector
+from chardet.universaldetector import UniversalDetector # type: ignore
 import json
 
 pd.set_option('display.max_columns', None)  # Ver todas as colunas
