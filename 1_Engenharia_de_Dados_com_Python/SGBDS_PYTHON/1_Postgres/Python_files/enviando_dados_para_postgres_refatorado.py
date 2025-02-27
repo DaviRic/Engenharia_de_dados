@@ -2,7 +2,7 @@
 import pandas as pd # type: ignore
 import psycopg2 # type: ignore
 
-caminho_do_arquivo = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\Postgree\V_OCORRENCIA_AMPLA.json"
+caminho_do_arquivo = r"C:\Users\Usuario\Desktop\Engenharia_de_Dados\1_Engenharia_de_Dados_com_Python\SGBDS_PYTHON\1_Postgres\V_OCORRENCIA_AMPLA.json"
 df = pd.read_json(caminho_do_arquivo, encoding='utf-8')
 
 # 2°: Tratar os dados. Levar em considaração apenas as colunas: ["Numero da ocorrencia", "Classificacao da ocorrencia", "Data da ocorrencia", "Municipio", "UF", "Regiao"]
