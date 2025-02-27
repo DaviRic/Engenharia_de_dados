@@ -1,8 +1,8 @@
-import pandas as pd
-import psycopg2
+import pandas as pd # type: ignore
+import psycopg2 # type: ignore
 
 pd.set_option('display.max_columns', None)
-caminho_do_arquivo = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\Postgree\V_OCORRENCIA_AMPLA.json"
+caminho_do_arquivo = r"C:\Users\Usuario\Desktop\Engenharia_de_Dados\1_Engenharia_de_Dados_com_Python\SGBDS_PYTHON\1_Postgres\V_OCORRENCIA_AMPLA.json"
 df = pd.read_json(caminho_do_arquivo, encoding='utf-8')
 
 colunas = ["Numero_da_Ocorrencia", "Classificacao_da_Ocorrencia", "Data_da_Ocorrencia", "Municipio", "UF", "Regiao", "Nome_do_Fabricante"]
