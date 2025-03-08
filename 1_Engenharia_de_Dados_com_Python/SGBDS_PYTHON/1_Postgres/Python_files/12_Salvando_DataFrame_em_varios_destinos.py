@@ -1,4 +1,3 @@
-# %%
 from sqlalchemy import create_engine # type: ignore
 import pandas as pd # type: ignore
 
