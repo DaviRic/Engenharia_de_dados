@@ -7,12 +7,12 @@ Dessa forma entendo melhor o que os dados podem me oferecer e se no futuro eles 
 - Realizo o desenvolvimento de consultas SQL para recuperação, manipulação/alteração de dados;
 - Realizo testes de técnicas da engenharia de dados em bancos de dados baixados de alguns sites para melhorar minhas habilidades nesse universo.
 
-## Ferramentas e tecnologias utilizada
+## 🛠️ Ferramentas e tecnologias utilizada
 - Python com pandas
 - Jupyter Notebook
 - PostgreSQL, MySQL, SQL Server, SQLite
 
-## Bibliotecas utilizadas
+## 📚 Bibliotecas utilizadas
 - Pandas -> manipulação de dados
 - psycogp2 -> PostgreSQL
 - sqlalchemy -> MySQL
