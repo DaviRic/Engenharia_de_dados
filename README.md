@@ -13,7 +13,7 @@ Dessa forma entendo melhor o que os dados podem me oferecer e se no futuro eles 
 - PostgreSQL, MySQL, SQL Server, SQLite
 
 ## Bibliotecas utilizadas
-- Pandas
+- Pandas -> manipulação de dados
 - psycogp2 -> PostgreSQL
 - sqlalchemy -> MySQL
 - openpyxl -> para trabalhar com arquivos excel
