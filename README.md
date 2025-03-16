@@ -1,5 +1,5 @@
-## Prática de ferramentas de Engenharia de Dados
-✍️ Repositório dedicado para prática de ferramentas e fundamentos da engenharia de dados em ambiente controlado usando dados fictícios.
+## ✍️ Prática de ferramentas de Engenharia de Dados
+Repositório dedicado para prática de ferramentas e fundamentos da engenharia de dados em ambiente controlado usando dados fictícios.
 Dessa forma entendo melhor o que os dados podem me oferecer e se no futuro eles podem gerar valor.  
 - Esse espaço uso para praticar a manipulação de dados usando a biblioteca pandas;
 - Pratico a manipulação de dados em diversos SGBDs como PostgreSQL, MySQL, Microsoft SQL Server;
