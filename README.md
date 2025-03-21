@@ -5,8 +5,8 @@ Dessa forma entendo melhor o que os dados podem me oferecer e se no futuro eles 
 - Pratico a manipulação de dados em diversos SGBDs como PostgreSQL, MySQL, Microsoft SQL Server;
 - Pratico alguns processos de ETL mais isolados para entendimento de sintaxes da linguagem ao manipular os dataframes;
 - Realizo o desenvolvimento de consultas SQL para recuperação, manipulação/alteração de dados;
-- Estudo e pratico conceitos e ferramentas de Big Data;
-- Realizo testes de técnicas da engenharia de dados em bancos de dados baixados de alguns sites para melhorar minhas habilidades nesse universo.
+- Realizo testes de técnicas da engenharia de dados em bancos de dados baixados de alguns sites para melhorar minhas habilidades nesse universo;
+- Estudo e pratico conceitos e ferramentas de Big Data.
 
 ## 🛠️ Ferramentas e tecnologias utilizada
 - Python com pandas
