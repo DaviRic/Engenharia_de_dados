@@ -1,15 +1,3 @@
-""" ---------------- Passos do Projeto ---------------- """
-
-'''
-1°: Criar banco de dados
-2°: Criar tabelas
-3°: Comentar a criação da tabela
-4°: Criar a interface gráfica para preenchimento
-5°: Criar botões
-6°: Criar interação com botões
-    Salvar cadastro em banco de dados
-    Exportar dados do banco de dados para excel
-'''
 
 import sqlite3
 import pandas as pd # type: ignore
@@ -21,42 +9,8 @@ import sqlite3
 con = sqlite3.connect("cadastro_produto.db")
 cursor = con.cursor()
 
-# 2°: Criar tabelas
-'''cursor.execute("""CREATE TABLE produto
-                  (id, nome, valor, fornecedor, categoria, responsavel_cadastro)""")'''
-
 con.commit()
 con.close()
-
-
-# 4°: Criar a interface gráfica para preenchimento
-# Biblioteca tkinter
-# title  > Título da janela
-# labels > Descrição
-# entry  > Criar um campo de entrada de texto
-# grid   > Grade (Qual posição)
-#          padx: espaço na horizontal entre os termos
-#          pady: espaço na vertical entre os termos
-# width  > Tamanho da caixa de texto
-# row    > posição em linha
-# column > posição da coluna
-# mainloop() > Deixa a janela abertar até o usuário fechar
-# janela.geometro("800x800") > Tamanho da janela geral
-
-
-'''import tkinter as tk
-janela = tk.Tk()
-
-janela.title('Cadastro de produto')
-
-# Id do produto
-label_id = tk.Label(janela, text="ID do produto: ")
-label_id.grid(row=0, column=0, padx=10, pady=10)
-
-entry_id = tk.Entry(janela, width=30)
-entry_id.grid(row=0, column=0, padx=10, pady=10)
-
-janela.mainloop()'''
 
 def validar_numero(valor, modo):
     # Verifica se o valor é vazio ou se é um número válido (inteiro ou decimal)
