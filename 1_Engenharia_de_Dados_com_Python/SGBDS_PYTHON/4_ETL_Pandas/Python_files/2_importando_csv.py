@@ -4,7 +4,6 @@ df = pd.read_csv(r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS
 
 # Filtrar um item específico de uma coluna
 df_estado = df.loc[df['state'] == 'Mato Grosso']
-df_estado
 
 # Escolher estados específicos
 estados = ['Rio de Janeiro', 'Ceará', 'Rondônia', 'Bahia']
@@ -32,4 +31,3 @@ df['state'] = df['state'].replace(df_lista_estados)
 debug_caminho = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_excel\Caquinha.xlsx"
 
 df_debug = pd.read_excel(debug_caminho)
-df_debug.head()
