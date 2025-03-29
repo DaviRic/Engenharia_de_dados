@@ -2,7 +2,6 @@ import pandas as pd # type: ignore
 
 df = pd.read_csv(r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_csv\Clientes.csv", delimiter=',')
 
-
 # Filtrar um item específico de uma coluna
 df_estado = df.loc[df['state'] == 'Mato Grosso']
 df_estado
@@ -18,11 +17,6 @@ df['number'] = df['number'].fillna('Sem número')
 df['additionals'] = df['additionals'].fillna('Sem informação adicional')
 df['email'] = df['email'].fillna('Email não cadastrado')
 df['state'] = df['state'].fillna('Estado não informado')
-
-
-
-
-# df = pd.read_csv(caminho)
 
 df['state'] = df['state'].replace('São Paulo', 'Sao Paulo')
 
