@@ -16,7 +16,6 @@ for arquivo in os.listdir(diretorio):
 consolidado = pd.concat(dados)
 consolidado.head()
 
-
 pasta_destino = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivo_consolidado\\"
 
 nome_arquivo = "union_files.xlsx"
@@ -24,8 +23,3 @@ nome_arquivo = "union_files.xlsx"
 caminho_completo = pasta_destino + nome_arquivo
 
 consolidado.to_excel(caminho_completo, index=False)
-
-
-
-
-
