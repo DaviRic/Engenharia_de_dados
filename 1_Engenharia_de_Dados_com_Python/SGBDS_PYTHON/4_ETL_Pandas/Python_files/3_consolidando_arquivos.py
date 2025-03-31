@@ -1,8 +1,6 @@
 import pandas as pd # type: ignore
 import os
 
-
-
 diretorio = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivo_leitura_varios"
 
 # Variável que vai armazenar os dados dos arquivos .xlsx
@@ -17,8 +15,6 @@ for arquivo in os.listdir(diretorio):
 
 consolidado = pd.concat(dados)
 consolidado.head()
-
-# #### Salvando arquivo consolidado em uma pasta específica
 
 
 pasta_destino = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivo_consolidado\\"
