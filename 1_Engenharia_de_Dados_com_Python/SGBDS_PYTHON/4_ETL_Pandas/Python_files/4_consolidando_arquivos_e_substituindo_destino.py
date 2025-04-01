@@ -2,11 +2,9 @@
 import pandas as pd # type: ignore
 import os
 
-
 vendas_2021 = pd.read_excel(r"")
 vendas_2022 = pd.read_excel(r"")
 vendas_2023 = pd.read_excel(r"")
-
 
 diretorio = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivo_leitura_varios"
 
@@ -22,8 +20,6 @@ for arquivo in os.listdir(diretorio):
 
 consolidado = pd.concat(dados)
 # consolidado.head()
-
-
 
 pasta_destino = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivo_consolidado\\"
 
