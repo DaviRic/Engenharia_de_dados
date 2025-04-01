@@ -19,7 +19,6 @@ for arquivo in os.listdir(diretorio):
         dados.append(df)
 
 consolidado = pd.concat(dados)
-# consolidado.head()
 
 pasta_destino = r"C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivo_consolidado\\"
 
@@ -31,8 +30,3 @@ if os.path.exists(caminho_completo):
     os.remove(caminho_completo)
 
 consolidado.to_excel(caminho_completo, index=False)
-
-
-
-
-
