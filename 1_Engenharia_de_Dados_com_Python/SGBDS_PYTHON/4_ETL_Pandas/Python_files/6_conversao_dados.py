@@ -1,16 +1,7 @@
-
-import pandas as pd
+import pandas as pd # type: ignore
 
 
 df = pd.read_csv(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_csv\Clientes.csv', delimiter=',')
-df.head()
-
-
-
-df['id'].dtype
-
-
-print(df['id'].dtype)
 
 
 for coluna in df.columns:
