@@ -1,18 +1,14 @@
 import pandas as pd # type: ignore
 
-
 df = pd.read_csv(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_csv\Clientes.csv', delimiter=',')
 
-
 df['nome_completo'] = df['first_name'] + ' ' + df['last_name']
-
 
 df['created_at'] = pd.to_datetime(df['created_at'])
 
 
 # Adicionar coluna somente com ano
 df['year'] = df['created_at'].dt.year
-df.head(3)
 
 
 # Adicionar coluna somente com o mês
