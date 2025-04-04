@@ -59,8 +59,6 @@ meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio',  'junho',
          'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
 df['month_name'] = df['created_at'].dt.month.map(lambda x: meses[x-1])
-df.head(3)
-
 
 # Adicionar coluna de dia
 df['day'] = df['created_at'].dt.day
@@ -87,9 +85,3 @@ meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio',  'junho',
          'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
 df['month_name'] = df['created_at'].dt.month.map(lambda x: meses[x-1])
-df
-
-
-
-
-
