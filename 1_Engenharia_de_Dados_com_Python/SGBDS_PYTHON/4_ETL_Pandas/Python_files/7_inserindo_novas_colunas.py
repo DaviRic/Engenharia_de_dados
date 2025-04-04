@@ -6,10 +6,8 @@ df['nome_completo'] = df['first_name'] + ' ' + df['last_name']
 
 df['created_at'] = pd.to_datetime(df['created_at'])
 
-
 # Adicionar coluna somente com ano
 df['year'] = df['created_at'].dt.year
-
 
 # Adicionar coluna somente com o mês
 df['month'] = df['created_at'].dt.month
@@ -55,9 +53,6 @@ for coluna in df['month']:
         case 12:
             df.loc[cont, 'month'] = 'dezembro'
             cont+=1
-
-df.head()
-
 
 # Adicionar coluna com o nome do mês respectivo ao número de forma mais avançada e sem gambiarra
 meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio',  'junho',
