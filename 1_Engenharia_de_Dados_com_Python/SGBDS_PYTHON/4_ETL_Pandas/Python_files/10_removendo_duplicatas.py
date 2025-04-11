@@ -14,12 +14,7 @@ levar o documento para o destino que eu queira (Banco de dados
                                                 txt, etc)'''
 
 df_sem_dup_parametro = df.drop_duplicates(subset=['ID'])
-df_sem_dup_parametro
 
 # Removendo diretamente as duplicatas do DF (inplace). Com esse método não é necessário criar um outro DataFrame
 # Ele remove as duplicatas diretamente no dataframe
 df.drop_duplicates(inplace=True)
-
-
-
-
