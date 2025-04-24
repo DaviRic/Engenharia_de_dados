@@ -12,5 +12,3 @@ def rename_reorder_data(dados):
 
 dados = pd.read_excel(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_excel\Produto.xlsx') 
 dataframe = rename_reorder_data(dados)
-
-
