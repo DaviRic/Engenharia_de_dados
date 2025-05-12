@@ -11,7 +11,6 @@ dados_categoria = pd.read_excel(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_c
 cursor.execute('DELETE FROM [Categoria]')
 cursor.commit()
 
-
 for index, linha in dados_categoria.iterrows():
     # Insere os dados nas colunas
     cursor.execute("INSERT INTO [Categoria](ID, categoria) values(?, ?)", linha.id, linha.nome)
@@ -19,7 +18,3 @@ for index, linha in dados_categoria.iterrows():
 cursor.commit()     # Valida os dados no SQL Server
 cursor.close()      # Fecha o cursor
 conexaoDB.close()   # Fecha a conexão do SQL Server
-
-
-
-
