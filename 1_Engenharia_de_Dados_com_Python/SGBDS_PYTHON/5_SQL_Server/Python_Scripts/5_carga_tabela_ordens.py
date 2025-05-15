@@ -21,9 +21,3 @@ for index, linha in dados_ordens.iterrows():
 cursor.commit()     # Valida os dados no SQL Server
 cursor.close()      # Fecha o cursor
 conexaoDB.close()   # Fecha a conexão do SQL Server
-
-
-
-
-
-
