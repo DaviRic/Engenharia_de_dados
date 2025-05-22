@@ -7,14 +7,12 @@ conexaoDB = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'f'SERVER={se
 cursor = conexaoDB.cursor() # criando o cursor de comando para executar as consultas (queries)
 
 dados_clientes = pd.read_csv(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_csv\Clientes.csv', delimiter=',')
-# dados_clientes.head()
 
 dados_clientes['created_at'] = pd.to_datetime(dados_clientes['created_at'])
 dados_clientes['email'] = dados_clientes['email'].fillna('Sem registro')
 dados_clientes['street'] = dados_clientes['street'].fillna('Sem info')
 dados_clientes['number'] = dados_clientes['number'].fillna('Sem número')
 dados_clientes['additionals'] = dados_clientes['additionals'].fillna('Sem info')
-# dados_clientes.head(5)
 
 cursor.execute('TRUNCATE TABLE [Clientes]')
 cursor.commit()
@@ -36,12 +34,7 @@ for index, linha in dados_clientes.iterrows():
 
 cursor.commit()     # Valida os dados no SQL Server
 cursor.close()      # Fecha o cursor
-conexaoDB.close()   # Fecha a conexão do SQL Server
-
-# linha.id, linha.created_at, linha.first_name, linha.last_name, linha.email, linha.cell_phone, linha.country, linha.state, linha.street, linha.number, linha.additionals
-# 
-# id, created_at, first_name, last_name, email, cell_phone, country, state, street, number, additionals
-# 
+conexaoDB.close()   # Fecha a conexão do SQL Server 
 
 
 
