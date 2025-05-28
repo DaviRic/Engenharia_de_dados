@@ -21,8 +21,6 @@ TRUNCATE TABLE [dbo].[Clientes];
 """)
 cursor.commit() # Validar os dados do SQL Server para não bloquear o usuário
 
-Produtos.head(3)
-
 for index, linha in Produtos.iterrows():
     cursor.execute("INSERT INTO [Produtos](id, nome, preco, id_categoria) values (?, ?, ?, ?)",
                     linha.ID, linha.Name, linha.Price, linha.Id_Category)
