@@ -20,5 +20,3 @@ LEFT JOIN [dbo].[Clientes] as T5 on T2.customer_id = T5.id
 """
 
 df_query = pd.read_sql(query, conexaoDB)
-
-
