@@ -12,8 +12,6 @@ Itens = pd.read_excel(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\
 Ordens = pd.read_excel(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_excel\Ordens.xlsx')
 Clientes = pd.read_csv(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\4_ETL Pandas\arquivos_csv\Clientes.csv', delimiter=',')
 
-Clientes.head(1)
-
 T1 = pd.merge(Ordens, Clientes, left_on="customer_id", right_on="id", how="left")
 
 # Left join -> faz um join entre a tabela da esquerda e a tabela da direita conservando todos os dados da tabela da esquerda
