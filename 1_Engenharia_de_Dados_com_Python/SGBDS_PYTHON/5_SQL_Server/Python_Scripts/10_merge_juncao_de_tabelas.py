@@ -29,7 +29,3 @@ T2 = T2[["id", "Name", "Id_Category"]]
 categoria_prod = pd.merge(T2, Categoria, left_on="Id_Category", right_on="id", how="left")
 
 categoria_prod = categoria_prod[["id_x", "Name", "Id_Category", "nome"]]
-
-
-
-
