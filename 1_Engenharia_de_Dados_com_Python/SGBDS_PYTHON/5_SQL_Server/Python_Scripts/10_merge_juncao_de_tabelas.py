@@ -29,10 +29,8 @@ T2 = pd.merge(Itens, Produtos, left_on="product_id", right_on="ID", how="left")
 T2 = T2[["id", "Name", "Id_Category"]]
 
 categoria_prod = pd.merge(T2, Categoria, left_on="Id_Category", right_on="id", how="left")
-categoria_prod.head(5)
 
 categoria_prod = categoria_prod[["id_x", "Name", "Id_Category", "nome"]]
-categoria_prod.head(5)
 
 
 
