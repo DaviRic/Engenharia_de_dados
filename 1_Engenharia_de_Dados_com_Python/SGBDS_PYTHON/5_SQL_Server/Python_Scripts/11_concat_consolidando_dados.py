@@ -5,7 +5,6 @@ vendas_2021 = pd.read_excel(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_P
 vendas_2022 = pd.read_excel(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\5_SQL_Server\arquivos_excel\Vendas2022.xlsx')
 vendas_2023 = pd.read_excel(r'C:\Users\Cliente\Desktop\Engenharia_de_dados_com_Python\SGBDS_PYTHON\5_SQL_Server\arquivos_excel\Vendas2023.xlsx')
 
-# arquivos_consolidados = pd.concat([vendas_2021, vendas_2022, vendas_2023])
 # arquivos_consolidados = pd.concat([vendas_2021, vendas_2022, vendas_2023], ignore_index=True) # Não cria índice ao criar o novo dataframe
 arquivos_consolidados = pd.concat([vendas_2021, vendas_2022, vendas_2023], keys=["2021", "2022", "2023"]) # Cria uma nova coluna onde é identificado os dados de cada tabela
 
@@ -51,5 +50,3 @@ df_2022['nome_do_arquivo'] = nome_arquivo_2022
 df_2023['nome_do_arquivo'] = nome_arquivo_2023
 
 arquivos_consolidados_df = pd.concat([df_2021, df_2022, df_2023])
-
-
